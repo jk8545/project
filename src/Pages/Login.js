@@ -35,6 +35,29 @@ const Login = () => {
             Login  
           </button>  
         </form>  
+        <div className="mt-4 text-center">  
+          <p className="text-sm text-gray-600">Or login with:</p>  
+          <div className="flex justify-center mt-2">  
+            <button  
+              onClick={() => {  
+                // Here you would typically handle the Google login process  
+                console.log("Google Login clicked");  
+              }}  
+              className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 mr-2"  
+            >  
+              Google  
+            </button>  
+            <button  
+              onClick={() => {  
+                // Here you would typically handle the Facebook login process  
+                console.log("Facebook Login clicked");  
+              }}  
+              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"  
+            >  
+              Facebook  
+            </button>  
+          </div>  
+        </div>  
       </div>  
     </div>  
   );  
