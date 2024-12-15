@@ -4,6 +4,11 @@ import Landing from "./Pages/Landing";
 import Signup from "./Pages/signup";
 import Login from "./Pages/Login";
 import Gui from "./Pages/gui";
+import HamburgerMenu from "./components/HamburgerMenu";
+import About from "./components/about";
+import Contact from "./components/contact";
+
+
 
 function App() {
   return (
@@ -13,6 +18,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="/gui" element={<Gui />} /> 
+        <Route path="/HamburgerMenu" element={<HamburgerMenu />} /> 
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

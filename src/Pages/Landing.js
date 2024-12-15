@@ -1,14 +1,15 @@
 // src/Landing.js
 import React from "react";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "../components/HamburgerMenu";
 
 const Landing = () => {
     return (
         <div className="flex flex-col h-[100vh] overflow-hidden">
             {/* Navbar */}
             <div className="h-[4rem] w-full flex justify-between px-5 items-center">
-                <div className="uppercase">Project_name</div>
-                <div className="flex space-x-10">
+                <HamburgerMenu />
+                <div className="hidden md:flex space-x-10">
                     <div>About</div>
                     <div>Paraphraser</div>
                     <div>Contact</div>
@@ -56,8 +57,7 @@ const Landing = () => {
                     <img
                         src="image.png"
                         className="z-10 scale-110 h-[30rem] w-[22rem] object-cover"
-                         alt="..."
-
+                        alt="..."
                     />
                 </div>
             </div>
